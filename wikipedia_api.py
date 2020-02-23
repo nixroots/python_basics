@@ -13,4 +13,11 @@ print(wikipedia.page("Python").content)    # just plain text. Excludes images
 print(wikipedia.page("Python").url)        # extract URLs
 
 print(wikipedia.page("ubuntu").images[0])  # get the first image
+urllib.request.urlretrieve(image_down_link , "loc.jpg") #save image locally
+
+Movie Scraping
+---------------
+print(wikipedia.WikipediaPage(title = 'Metropolis (1927 film)').summary)      
+section = wikipedia.WikipediaPage('Metropolis (1927 film)').section('Plot')
+
 
